@@ -1,9 +1,12 @@
+/* General Layout */
 body {
-  font-family: Arial, sans-serif;
-  max-width: 800px;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  max-width: 900px;
   margin: auto;
   padding: 20px;
-  line-height: 1.6;
+  line-height: 1.7;
+  background-color: #f9f9f9;
+  color: #333;
 }
 
 header, footer {
@@ -11,15 +14,81 @@ header, footer {
   margin-bottom: 2rem;
 }
 
-h1, h2 {
-  color: #333;
+h1 {
+  font-size: 2.2rem;
+  margin-bottom: 0.3rem;
 }
 
+h2 {
+  margin-top: 2rem;
+  border-bottom: 2px solid #007acc;
+  display: inline-block;
+  padding-bottom: 0.2rem;
+}
+
+h3 {
+  margin-bottom: 0.3rem;
+}
+
+p {
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+/* Project List */
+#projects ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#projects li {
+  background: #fff;
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+#projects li:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+/* Links */
 a {
   color: #007acc;
   text-decoration: none;
+  font-weight: 600;
 }
 
 a:hover {
   text-decoration: underline;
+}
+
+/* Contact Section */
+#contact p {
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+footer {
+  font-size: 0.9rem;
+  color: #666;
+  margin-top: 2rem;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  body {
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+  }
 }
