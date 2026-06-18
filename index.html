@@ -3,71 +3,145 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Milosz Wojciechowicz - Portfolio</title>
+  <title>Milosz Wojciechowicz — CS Graduate</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>Milosz Wojciechowicz</h1>
-    <p>University of Nottingham</p>
-    <p>Computer Science Student | 3rd Year</p>
-  </header>
-
-  <main>
-    <section id="about">
-      <h2>About Me</h2>
-      <p>
-        I’m a 3rd year Computer Science student at the University of Nottingham
-        with a strong interest in software engineering, web development, and cyber-security.
-        I personaly enjoy solving real-world problems through technology and collaborating
-        on impactful projects.
-      </p>
-    </section>
-
-    <section id="projects">
-      <h2>Projects (Examples/Demos available in github)</h2>
-      <ul>
-        <li>
-          <h3><a href="https://github.com/miloszw7/Frogger" target="_blank">🐸 Frogger (Java)</a></h3>
-          <p>
-            Refactored and rebuilt the classic Frogger game using Java from a
-            provided skeleton. Focused on clean architecture, modular design,
-            and object-oriented principles.
-          </p>
-        </li>
-
-        <li>
-          <h3><a href="https://github.com/miloszw7/Assessment-tool" target="_blank">🧪 AI Decoloniality Assessment Tool</a></h3>
-          <p>
-            As part of a team, designed and developed a web-based tool to assess
-            the decoloniality impact of AI systems. Examples of my responsibilities included
-            backend/frontend development, research, presenting and many more.
-          </p>
-        </li>
-
-        <li>
-          <h3><a href="https://github.com/miloszw7/Robotics" target="_blank">🤖 Security Robot</a></h3>
-          <p>
-            Collaborated in a team of 3 to design a functional robot using
-            hardware and software integration. Developed movement algorithms and
-            implemented basic sensor logic.
-          </p>
-        </li>
-      </ul>
-    </section>
-
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>
-        📬 <a href="mailto:milosz6894@gmail.com">milosz6894@gmail.com</a> |
-        <a href="https://uk.linkedin.com/in/milosz-wojciechowicz-13a432389" target="_blank">LinkedIn</a> |
-        <a href="https://github.com/miloszw7" target="_blank">GitHub</a>
-      </p>
-    </section>
-  </main>
-
+ 
+  <!-- Nav -->
+  <nav>
+    <span class="logo">Welcome to my portfolio!</span>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+ 
+  <!-- Hero -->
+  <section id="hero">
+ 
+    <h1>Milosz<br>Wojciechowicz</h1>
+    <div class="terminal-line">
+      <span class="prompt">$</span>
+      <span>Computer Science Graduate · University of Nottingham</span>
+      <span class="cursor"></span>
+    </div>
+    <p class="hero-desc">
+      With my versatile skillset I am currently seeking opportunities to further develop technical expertise and contribute to real-world projects. Passionate about clean code,
+      good architecture, and security-conscious engineering.
+    </p>
+    <div class="hero-links">
+      <a class="btn btn-primary" href="#projects">View my work</a>
+      <a class="btn btn-outline" href="https://uk.linkedin.com/in/milosz-wojciechowicz-13a432389" target="_blank">LinkedIn</a>
+    </div>
+  </section>
+ 
+  <!-- About -->
+  <section id="about">
+    <p class="section-label">// 01 — about</p>
+    <h2>About Me</h2>
+    <p>
+      I'm a final-year Computer Science student at the University of Nottingham
+      with a strong interest in software engineering, web development, and
+      robotics. I enjoy solving real-world problems through technology
+      and working in collaborative, fast-moving teams.
+    </p>
+    <p>
+      Many other projects been built which can happily be shown upon request to showcase other skills
+    </p>
+    <div class="skills-row">
+      <span class="skill-tag">Java</span>
+      <span class="skill-tag">Python</span>
+      <span class="skill-tag">JavaScript</span>
+      <span class="skill-tag">HTML/CSS</span>
+       <span class="skill-tag">R</span>
+      <span class="skill-tag">Git</span>
+      <span class="skill-tag">React</span>
+      <span class="skill-tag">C</span>
+      <span class="skill-tag">SQL</span>
+    </div>
+  </section>
+ 
+  <!-- Projects -->
+  <section id="projects">
+    <p class="section-label">// 02 — projects</p>
+    <h2>Selected Work</h2>
+    <p style="color:var(--muted);font-size:0.9rem;margin-bottom:1.8rem;">
+      Examples and demos available on <a href="https://github.com/miloszw7" target="_blank">GitHub</a>.
+    </p>
+    <div class="projects-grid">
+ 
+      <div class="project-card">
+        <div class="project-icon"></div>
+        <h3><a href="https://github.com/miloszw7/Chatbot" target="_blank">AI Chatbot</a></h3>
+        <p>
+          Designed and built a conversational AI chatbot from scratch.
+          Focused on natural language understanding, dialogue management,
+          and producing coherent, context-aware responses.
+        </p>
+        <div class="project-tags">
+          <span class="project-tag">Python</span>
+          <span class="project-tag">NLP</span>
+          <span class="project-tag">AI</span>
+        </div>
+      </div>
+ 
+      <div class="project-card">
+        <div class="project-icon"></div>
+        <h3><a href="https://github.com/miloszw7/Assessment-tool" target="_blank">AI Decoloniality Assessment Tool</a></h3>
+        <p>
+          Team project: a web-based tool to assess the decoloniality
+          impact of AI systems. Contributed to full-stack development,
+          research, and stakeholder presentations.
+        </p>
+        <div class="project-tags">
+          <span class="project-tag">Web Dev</span>
+          <span class="project-tag">AI Ethics</span>
+          <span class="project-tag">Team Project</span>
+        </div>
+      </div>
+ 
+      <div class="project-card">
+        <div class="project-icon"></div>
+        <h3><a href="https://github.com/miloszw7/Robotics" target="_blank">Security Robot</a></h3>
+        <p>
+          Collaborated in a team of three to build a functional security
+          robot, integrating hardware and software. Developed movement
+          algorithms and implemented sensor logic.
+        </p>
+        <div class="project-tags">
+          <span class="project-tag">Robotics</span>
+          <span class="project-tag">Hardware</span>
+          <span class="project-tag">Algorithms</span>
+        </div>
+      </div>
+ 
+    </div>
+  </section>
+ 
+  <!-- Contact -->
+  <section id="contact">
+    <p class="section-label">// 03 — contact</p>
+    <h2>Get in Touch</h2>
+    <p>
+      I'm actively looking for graduateroles.
+      If you'd like to talk, feel free to reach out!
+    </p>
+    <div class="contact-links">
+      <a class="btn btn-primary" href="mailto:milosz6894@gmail.com">milosz6894@gmail.com</a>
+      <a class="btn btn-outline" href="https://uk.linkedin.com/in/milosz-wojciechowicz-13a432389" target="_blank">LinkedIn</a>
+      <a class="btn btn-outline" href="https://github.com/miloszw7" target="_blank">GitHub</a>
+    </div>
+  </section>
+ 
   <footer>
-    <p>&copy; 2025 Milosz Wojciechowicz</p>
+    <p>&copy; 2026 Milosz Wojciechowicz — built with HTML &amp; CSS</p>
   </footer>
+ 
 </body>
 </html>
+ 
